@@ -2,7 +2,7 @@
 abecedario = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 palabra = input("Ingresa una palabra: ")
 nuevaPalabra = " "
-for letra in palabra:
+for letra in palabra.lower():
     if letra == " ":
         nuevaPalabra += " "
     else:
@@ -11,4 +11,4 @@ for letra in palabra:
         nuevaPalabra += nuevaLetra
     
 print("El cifrado de la palabra:", palabra)
-print("", nuevaPalabra)
+print("", nuevaPalabra.lower())
